@@ -1,0 +1,13 @@
+.photo {
+    width: 10%;
+    height: 10%;
+    border: 5px salmon;
+
+}
+
+.knowledge {
+    background-color:gray; 
+    border:5px solid Violet;
+    text-align:center;
+    font-size:150%
+}
