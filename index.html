@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link rel = "stylesheet" type = "text/css" href = "index.css">
   </head>
 
 <style>
   body {
-    background-image: url('background1.jpg');
+    background-image: url('background3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    <!-- background-attachment: fixed;-->  
+    
+  }
+  #example1{
+    box-sizing: content-box;  
+    width: 450px;
+    height: 50px;
+    padding: 50px;  
+    text-align: center;
+  }
+  #example2{
+    box-sizing: content-box;  
+    width: 650px;
+    height: 50px;
+    padding: 50px;  
+    text-align: center; 
+  }
+  #example3{
+    box-sizing: content-box;  
+    width: 850px;
+    height: 50px;
+    padding: 50px;  
+    text-align: center; 
   }
 </style>
 
-<h1 style="color:blue;"></h1>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Social Media</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100006792166266" class="bg-success">Facebook</a></li>
+      <li><a class="dropdown-item" href="https://www.instagram.com/pandeyji2509/">Instagram</a></li>
+      <li><a class="dropdown-item" href="https://www.linkedin.com/in/ankit-pandey-3560ab1a1/">Linkedin</a></li>
+     <!-- <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#"></a></li>-->
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://uiet.puchd.ac.in">My College Website</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact Me</a>
+  </li>
+</ul>
 
-<h2 style="text-align:center;font-size:300%">INTRODUCTION</h2>
+<audio controls autoplay>
+  <source src="Jarico.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
-  <p style="color:blue; text-align:center; font-size:200%">MY NAME IS ANKIT PANDEY<br><br> A BUDDING SOFTWARE DEVELOPER
+<h2 class="display-1" style="text-align:center">Hello STRANGER!</h2>
+
+  <p style="color:blue; text-align:center; font-size:200%">
+    <br>
+    <mark>
+      ANKIT PANDEY WELCOMES YOU
+    </mark>
+    <br>
+    <br>
+    <small class="text-muted" >
+      A BUDDING SOFTWARE DEVELOPER
+    </small>
   </p>
 
   <p style="text-align:center; border:0px solid tomato;">
@@ -24,19 +84,79 @@
       <br>
       HELLO
       <br>
-    <img class="photo" src="Ankit.jpg" alt="Ankit">
+    <img class="photo" src="Ankit1.jpg" alt="Ankit">
   </p>
 
-  <p style="background-image:url('img_girl.jpg'); text-align:center; font-size:120%;border:5px solid red;"> COMPLETED MY
-    SCHOOLING FROM KVS <br> CURRENTLY PURSUING ENGINEERING FROM UIET CHANDIGARH <br> DOB:25/09/2002 <br> </p>
+  <center>
+  <div id="example2">
+  <p class="pi"> COMPLETED MY
+    SCHOOLING FROM KVS <br> CURRENTLY PURSUING ENGINEERING FROM UIET CHANDIGARH <br> DOB: 25/09/2002 <br>
+   </p>
+  </div>
+  </center>
 
-  <p class = "knowledge"><i>Basic knowledge of
-      Programming languages C,C++ and PYTHON</i></p>
+  <br>
 
-  <a href=https://uiet.puchd.ac.in />Visit My College Website!</a>
-  <a href=https://www.instagram.com/pandeyji2509 />My instagram profile!</a>
+  <center>
+   <div id="example1">
+      <p class = "knowledge"><i>Basic knowledge of Programming languages C,C++ and PYTHON</i>
+    </p>
+  </div>
+  </center>
+  
+  <figure class="text-end">
+    <blockquote class="blockquote">
+      <p><br><br><br><br><mark>“Be the change that you wish to see in the world.”</mark></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <mark>Mahatama Gandhi </mark>
+    </figcaption>
+  </figure>
+  
+<center>
+  <table class= "tab" >
+    <tr class="tab">
+      <th class="tab">CLASS</th>
+      <th class="tab">TOTAL NUMBERS</th>
+      <th class="tab">PERCENTAGE</th>
+    </tr>
+    <tr>
+      <td class="tab">INTERMEDIATE</td>
+      <td class="tab">476</td>
+      <td class="tab">95.2%</td>
+    </tr>
+    <tr>
+      <td class="tab">HIGH SCHOOL</td>
+      <td class="tab">472</td>
+      <td class="tab">94.4%</td>
+    </tr>
+  </table>
+</center>
+
+<br>
+
+<div id="example3">
+<p id="demo"></p>
+<script>
+  function myFunction() {
+    document.getElementById("demo").style.fontSize = "25px"; 
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "aqua";        
+    document.getElementById("demo").style.border = "5px solid rgb(14, 104, 37)";
+    document.getElementById('demo').innerHTML = Date();
+  }
+  </script>
+  <button type="button" onclick="myFunction()">Click me to display Date and Time.
+</button>
+</div>
 
 
-  </body>
 
+ <!-- links 
+   <a class="c" href=https://uiet.puchd.ac.in />Visit My College Website!</a><br>
+  <a class="c" href=https://www.linkedin.com/in/ankit-pandey-3560ab1a1/ />My Linkedin Profile</a><br>
+  <a class="c" href=https://www.instagram.com/pandeyji2509 />My instagram profile!</a>
+-->
+
+</body>
 </html>

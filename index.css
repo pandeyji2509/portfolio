@@ -1,13 +1,69 @@
 .photo {
-    width: 10%;
-    height: 10%;
-    border: 5px salmon;
-
+    width: 20%;
+    height: 15%;
+    border: 5px solid rgb(129, 197, 241);
+    border-radius: 10px;
 }
 
 .knowledge {
-    background-color:gray; 
-    border:5px solid Violet;
+    background-color:rgb(163, 70, 70); 
+    border: solid rgb(105, 10, 10);
+    border-width: 15px 10px 15px 15px;
     text-align:center;
-    font-size:150%
+    font-size:120%;
+}
+.pi{ 
+    text-align:center; 
+    font-size:120%;
+    border: 5px solid rgb(14, 104, 37);
+    color: rgb(46, 224, 91);
+}
+.heading1{
+    color:blue;
+}
+.c{
+    text-align:center;
+    color:rgb(255, 17, 0);
+}
+.tab{
+    border:1px solid black;
+    width: 50%;
+    text-align:center;
+    color: aquamarine;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: red;
+  }
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #c9fd0d;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #ca700a;
+}
+
+.cont{
+    text-align:center; 
+    font-size:220%;
+    color: burlywood;
+    margin-left: 0.1rem;
+}
+
+.cont-img1{
+    width: 55px;
+    float:left;
+    margin-left: 15rem;
+}
+
+.cont-img2{
+    width: 85px;
+    float:left;
+    margin-left: 1em;
 }
