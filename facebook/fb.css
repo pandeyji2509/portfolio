@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body{
+    background-color: rgba(154, 154, 154, 0.831);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Roboto Slab', serif;;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 89px;
+    background-color: azure;
+    color:white;
+}
+
+.brand img{
+    width:64px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+
+}

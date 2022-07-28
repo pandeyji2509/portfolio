@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body id="body">
+
+    <!--  <div class="alldivs">first div</div>  -->
+    <div id="firstDiv">first div</div>
+    <script>
+        //const allDivs=document.getElementsByClassName("alldivs")
+        //const allDivs=document.querySelectorAll("alldivs")
+        //console.log(allDivs)
+    </script>
+    <!-- <div class="alldivs">second div</div>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table> -->
+    <button id="clickBtn" onclick="alert('namaste world')">click me</button>
+    <script>
+        //Root node
+        //console.log(document.documentElement)
+        //console.log(document.body)
+        //console.log(document.head)
+
+        //childrens
+        //console.log(document.body.childNodes)
+        //console.log(document.body.children)
+        //console.log(document.body.firstChild)
+        //console.log(document.body.lastChild)
+        //console.log(document.body.firstElementChild)
+        //console.log(document.body.lastElementChild)
+        //for (node of document.body.children){
+        //    //console.log(document.body.children)
+        //    console.log(node)
+        //}
+        //const childrensOfBody=Array.from(document.body.children)
+        //console.log(childrensOfBody)
+         
+        //siblings 
+        // console.log(document.body.children[0])
+        //const ulTag=document.body.children[0]
+        //const firstLi=ulTag.children[0]
+        //const secondLi= ulTag.children[1]
+        //console.log(ulTag.nextElementSibling.textContent)  
+        //console.log(secondLi.previousElementSibling.textContent) 
+        
+        //table manipulation
+        
+        const tableTag=document.body.children[1]
+        //console.log(tableTag.tBodies[0].rows[0].cells[1].style="background-color:blue;")
+        
+        //ID search
+        //element.style.background="red"
+
+        //const ulTag=document.getElementById("element")
+        //ulTag.style.backgroundColor="red"
+
+        //listItem=document.getElementsByClassName("list-item")
+        //console.log(listItem)
+
+        //const listItems=document.querySelectorAll('.list-item')
+        //const listItems1=document.querySelectorAll('#element')
+        //console.log(listItems)
+        //console.log(listItems1)
+
+        //const listItems=document.querySelectorAll('ul > li:nth-child(1)')
+        //console.log(listItems[0].textContent)
+        //console.log(allDivs)
+        
+        //Attributes
+       // console.log(element.getAttribute('data'))
+       // console.log(element.setAttribute('order-placed','pending'))
+       // console.log(element.hasAttribute('order-placed'))
+       // console.log(element.removeAttribute('order-placed'))
+       // console.log(element.attributes)
+       // console.log(element.hasAttribute('order-placed'))
+
+        //creating and removing the node elements
+
+        const newDiv=document.createElement('div')
+        
+        newDiv.textContent="Namaste World"
+        newDiv.inerHTML=`<ul id="element" data="valid">
+        <li class="list-item">First Element</li>
+        <li class="list-item">Second Element</li>
+        <li class="list-item">third element</li>
+    </ul>`
+        //const newText=document.createTextNode('namaste world')
+        //newDiv.appendChild(newText)
+        body.append(newDiv)
+        //body.prepend(newDiv)
+        //body.before(newDiv)
+        //body.after(newDiv)
+        //firstDiv.replaceWith(newDiv)
+        //firstDiv.remove()
+        
+        //events
+        function callMe(event){
+            console.log(event.type)
+            console.log(event.currentTarget)
+            console.log(event.clientY)
+            console.log(event.clientX)
+            alert("thanks for watching")
+        }
+        //clickBtn.onclick=callMe
+
+        clickBtn.addEventListener('click',callMe)
+        //clickBtn.onclick=function(){
+        //    alert("thanks")
+        //}
+        //clickBtn.addEventListener('click',callMe)
+        //clickBtn.removeEventListener('click',callMe)
+        ////can't remove with this method
+        //clickBtn.removeEventListener('click',function(){
+        //    alert("thanks")
+        //})
+</script>
+</body>
+</html>

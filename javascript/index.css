@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+.container{
+    border:2px solid red;
+    margin: 3px 0;
+    background:cyan;
+    padding: 9px;
+}
